@@ -15,7 +15,7 @@ This code provides a Python script for synchronizing data between two MVX Elasti
 2. Create a `.env` file at the root of the project and add the following lines, replacing the placeholders with your Elasticsearch connection information:
 
    ```dotenv
-   ES1_USERNAME=your_es1_username
+   ES2_USERNAME=your_es2_username
    ES2_PASSWORD=your_es2_password
    
 ## Configuration
