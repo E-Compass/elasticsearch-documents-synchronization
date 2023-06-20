@@ -40,12 +40,12 @@ from_timestamp = actual_timestamp - from_interval
 
 # Elasticsearch's connection configuration
 load_dotenv()
-es1_username = os.getenv("ES1_USERNAME")
+es2_username = os.getenv("ES2_USERNAME")
 es2_password = os.getenv("ES2_PASSWORD")
 
 es1 = Elasticsearch("https://index.multiversx.com:443", request_timeout=request_timeout)
 es2 = Elasticsearch("https://mvx-index.e-compass.io:443", request_timeout=request_timeout,
-                    basic_auth=(es1_username, es2_password))
+                    basic_auth=(es2_username, es2_password))
 
 
 def query_documents(es, index, batch_start_timestamp, batch_end_timestamp, page_size, max_retries):
